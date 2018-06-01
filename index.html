@@ -5,21 +5,21 @@ Description:
 -->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      <title>Slice Game</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1" user-scalable=yes>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-      <link rel="stylesheet" href="style/styling.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
-      <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-    </head>
+<head>
+  <title>Slice Game</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" user-scalable=yes>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style/styling.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/dot-luv/jquery-ui.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+ </head>
 
-    <body>
-    <!-- Main container -->
-    <div class="container">
+<body>
+     <!-- Main container -->
+     <div class="container">
     
       <!-- Trial box -->
       <div class="alert alert-info float-left" id="trialsLeft">
@@ -35,19 +35,39 @@ Description:
       <!-- Question box -->
       <div class="container" id="itemContainer">
           <img src="" alt="" id="items" class="items">
+          
            <!-- Game over box -->
-          <div id="gameOver" class="gameOver">
-        
-      </div>
+          <div id="gameOver" class="gameOver"></div>
+          
+          <!-- Player information box -->
+          <div id="playerInfo" class="playerInfo">
+            <fieldset>
+             
+              Select item:
+            <label for="radio-1">Fruits</label>
+            <input type="checkbox" name="radio-1" id="radio-1" class="radio1">
+            
+            <label for="radio-2">Sports</label>
+            <input type="checkbox" name="radio-2" id="radio-2" class="radio2">
+            </fieldset>
+            
+            <!-- Start/Reset -->
+              <br><div class="col-md-6 text-center">
+                  <button id='startReset' class="btn btn-primary btn-lg center-block">
+                      Start Game
+                  </button>
+              </div>
+            
+          </div>
       </div>
       
       <!-- Instruction box -->
-      <div id="instruction" class="alert alert-success text-center"> Select the correct answer</div>
+      <div id="instruction" class="alert alert-success text-center"> Hover over each item </div>
       
-      <!-- Start/Reset -->
+      <!-- Begin game button -->
       <div class="col-md-14 text-center">
-      <button id='startReset' class="btn btn-primary center-block">
-          Start Game
+      <button id='beginGame' class="btn btn-primary btn-lg center-block">
+          Begin Game
       </button>
       </div>
       
@@ -65,7 +85,7 @@ Description:
     <!-- jQuery UI cdn -->
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <!-- Javascript file -->
-    <script src="js/jquery.js"></script>   
-    </body>
+    <script src="js/jquery.js"></script>
+</body>
 
 </html>

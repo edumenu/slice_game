@@ -18,47 +18,34 @@ body{
 
 /*Score box*/
 #score{
-
     z-index: 5;
     display: none;
-/*
-    left: 890px;
     box-shadow: 0px 3px rgba(0,0,0,0.6);
     -moz-box-shadow: 0px 3px rgba(0,0,0,0.6);
     -webkit-box-shadow: 0px 3px rgba(0,0,0,0.6); 
-*/
 }
 
 /*Question box*/
 #itemContainer{
    height: 38vw;
-/*
-    width: 90%;
-    height: 650px;
-*/
     margin: 60px auto 10px auto;
     background-color: #f0f0f0;
     position: relative;
     overflow: hidden;
-/*
     border-radius: 20px;
     box-shadow: 0px 3px rgba(0,0,0,0.2);
     -moz-box-shadow: 0px 3px rgba(0,0,0,0.2);
     -webkit-box-shadow: 0px 3px rgba(0,0,0,0.2);
-    font-size: 50px;
-    text-align: center;
-    color: black;
-    z-index: 2px;
-*/
 }
 
 /*Instruction box*/
 #instruction{
     width: 70%;
-    background-color: #B6B6B6;
+    background-color: #8B8B59;
     margin: 10px auto;
     border-radius: 10px;
-    color: black;
+    font-size: 3vw;
+    color: aliceblue;
     line-height: 40px;
     box-shadow: 0px 3px rgba(0,0,0,0.2);
     -moz-box-shadow: 0px 3px rgba(0,0,0,0.2);
@@ -66,7 +53,7 @@ body{
 }
 
 /*Start/Reset button*/
-#startReset{
+#startReset, #beginGame, #resetGame{
 /*
    height: 50px;
    margin: 10px 520px;
@@ -75,18 +62,16 @@ body{
    box-shadow: 0px 4px rgba(0,0,0,0.2);
    position: relative;
    background-color: #004AC8;
-/*
    border-color: #002666;
    transition: all 0.4s;
    -o-transition: all 0.4s;
    -webkit-transition: all 0.4s;
    -moz-transition: all 0.4s;
    -ms-transition: all 0.4s;    
-*/
 }
 
 /*When the start reset button is selected*/
-#startReset:active{
+#startReset:active, #beginGame:active, #resetGame:active {
     box-shadow: 0px 0px #161616;
     -moz-box-shadow: 0px 0px #161616;
     -webkit-box-shadow: 0px 0px #161616;
@@ -95,7 +80,7 @@ body{
 }
 
 /*Start/Reset button hover*/
-#startReset:hover{
+#startReset:hover,#beginGame:hover, #resetGame:hover{
   background-color: #003692;     
 }
 
@@ -104,32 +89,20 @@ body{
 #trialsLeft{
     z-index: 5;
     display: none;
-/*
-    width: 190px;
-    height: auto;
-    padding: 10px;
-*/
-/*
-    top:20px;
-    left: 90px;
-    position: absolute;
-*/
-/*
-    background-color: rgba(181, 235,36, 0.7);
     border-radius: 10px;
-     box-shadow: 0px 2px rgba(181, 235,36, 0.7);
-    -moz-box-shadow: 0px rgba(181, 235,36, 0.7);
-    -webkit-box-shadow: 0px 2px rgba(0,0,0, 0.2);
-*/
-/*    visibility: hidden;*/
-/*     display: none; */
+    box-shadow: 0px 3px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 3px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0px 3px rgba(0,0,0,0.6); 
+
 }
 
+/*Tiral stars*/
 .star{
     width: 1em;
     height: auto;
 }
 
+/*Dropping items*/
 .items{
     display: none;
     position: absolute;
@@ -141,6 +114,27 @@ body{
      height: 28vw;
     margin: 1px auto 1px auto;
     font-size: 35px;
+    color: #f0f0f0;
+    position: relative;
+    overflow: hidden;
+    padding: 10vw;
+    z-index: 8;
+    background: rgba(169,3,41,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(169,3,41,1)), color-stop(44%, rgba(143,2,34,1)), color-stop(100%, rgba(109,0,25,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019', GradientType=1 );
+    display: none;
+}
+
+/*Player info box*/
+#playerInfo{
+     height: 32vw;
+    margin: 1px auto 1px auto;
+    font-size: 20px;
     color: #f0f0f0;
     position: relative;
     overflow: hidden;
