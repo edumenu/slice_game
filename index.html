@@ -1,0 +1,71 @@
+<!--
+Created by: Edem Dumenu
+Date: 5/30/2018
+Description:
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Slice Game</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1" user-scalable=yes>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="style/styling.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+      <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+    <!-- Main container -->
+    <div class="container">
+    
+      <!-- Trial box -->
+      <div class="alert alert-info float-left" id="trialsLeft">
+        <span id="trialsLeftValue"></span> 
+      </div>
+     
+      <!-- Score -->
+      <div class="alert alert-info float-right"  id='score'>
+          Score: <span id='scorevalue'></span>
+      </div>
+      <!--/score -->
+      
+      <!-- Question box -->
+      <div class="container" id="itemContainer">
+          <img src="" alt="" id="items" class="items">
+           <!-- Game over box -->
+          <div id="gameOver" class="gameOver">
+        
+      </div>
+      </div>
+      
+      <!-- Instruction box -->
+      <div id="instruction" class="alert alert-success text-center"> Select the correct answer</div>
+      
+      <!-- Start/Reset -->
+      <div class="col-md-14 text-center">
+      <button id='startReset' class="btn btn-primary center-block">
+          Start Game
+      </button>
+      </div>
+      
+    </div>
+    <!-- /Main container -->
+    
+    <!-- Audio files -->
+    <audio id="slice_sound">
+        <source src="audio/slice.mp3">
+        <source src="audio/slice.ogg">
+    </audio>
+    
+    <!-- jQuery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- jQuery UI cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- Javascript file -->
+    <script src="js/jquery.js"></script>   
+    </body>
+
+</html>
