@@ -1,3 +1,7 @@
+//Created by: Edem Dumenu
+//Date: 5/30/2018
+//Description:
+
 //Initializing playing status 
 var playing = false;
 var score = 0;
